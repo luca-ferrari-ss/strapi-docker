@@ -1,6 +1,5 @@
 services:
   palm-beach-cannes-strapi:
-    container_name: palm-beach-cannes-strapi
     build: .
     restart: unless-stopped
     env_file: .env
@@ -12,14 +11,13 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
     networks:
       - palm-beach-cannes-network
-      - proxy-net
+      - dokploy-network
     expose:
       - 1337
     depends_on:
       - palm-beach-cannes-db
 
   palm-beach-cannes-db:
-    container_name: palm-beach-cannes-db
     image: postgres:14.0-alpine
     platform: linux/amd64 #for platform error on Apple M1 chips
     restart: unless-stopped
@@ -31,7 +29,7 @@ services:
       - palm-beach-cannes-data:/var/lib/postgresql/data/ #using a volume
     networks:
       - palm-beach-cannes-network
-      - db-admin-net
+      - dokploy-network
     expose:
       - 5432
 
@@ -42,9 +40,5 @@ volumes:
 networks:
   palm-beach-cannes-network:
     name: palm-beach-cannes-network
-  proxy-net:
+  dokploy-network:
     external: true
-    name: proxy-net
-  db-admin-net:
-    external: true
-    name: db-admin-net
