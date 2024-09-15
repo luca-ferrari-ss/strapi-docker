@@ -12,16 +12,14 @@ services:
     networks:
       - palm-beach-cannes-network
       - dokploy-network
-    # expose:
-    #   - 1337
-    ports:
+    expose:
       - 1337
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.strapi-docker.rule=Host(`strapi-docker.sombrerohosting.com`)
-      - traefik.http.routers.strapi-docker.entrypoints=websecure
-      - traefik.http.routers.strapi-docker.tls.certResolver=letsencrypt
-      - traefik.http.services.strapi-docker.loadbalancer.server.port=3000
+    # labels:
+    #   - traefik.enable=true
+    #   - traefik.http.routers.strapi-docker.rule=Host(`strapi-docker.sombrerohosting.com`)
+    #   - traefik.http.routers.strapi-docker.entrypoints=websecure
+    #   - traefik.http.routers.strapi-docker.tls.certResolver=letsencrypt
+    #   - traefik.http.services.strapi-docker.loadbalancer.server.port=3000
     depends_on:
       - palm-beach-cannes-db
 
