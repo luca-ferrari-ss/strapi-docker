@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_blocks_hero_01s",
+  "info": {
+    "displayName": "Hero 01",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.multimedia"
+    }
+  }
+}

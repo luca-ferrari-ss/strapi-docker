@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_blocks_slider_01s",
+  "info": {
+    "displayName": "Slider 01",
+    "icon": "arrowRight",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "cardsTextColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Green"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.multimedia-text"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_blocks_content_03s",
+  "info": {
+    "displayName": "Content 03",
+    "icon": "write",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "reverseColumnsOrder": {
+      "type": "boolean",
+      "default": false
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Green"
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.image"
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.multimedia"
+    }
+  }
+}

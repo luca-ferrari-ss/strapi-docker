@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_blocks_agenda_grids",
+  "info": {
+    "displayName": "Agenda grid",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Green"
+    },
+    "cardsTextColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Green"
+    },
+    "cardsBackgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "collectionName": "components_blocks_content_04s",
+  "info": {
+    "displayName": "Content 04",
+    "icon": "write",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "reverseColumnsOrder": {
+      "type": "boolean",
+      "default": false
+    },
+    "sectionTitleColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Orange"
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Green"
+    },
+    "cardsTextColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "cardsBackgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Light green"
+    },
+    "sectionTitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link-multimedia-text-title"
+    }
+  }
+}

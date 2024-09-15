@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_link_multimedia_text_titles",
+  "info": {
+    "displayName": "Link multimedia text title",
+    "icon": "feather",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.multimedia"
+    }
+  }
+}

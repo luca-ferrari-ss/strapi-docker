@@ -1,0 +1,79 @@
+{
+  "collectionName": "components_blocks_text_01s",
+  "info": {
+    "displayName": "Text 01",
+    "icon": "feather",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "alignment": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Center",
+        "Right"
+      ],
+      "default": "Left"
+    },
+    "sectionTitleColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "textColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Green"
+    },
+    "icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.image"
+    },
+    "sectionTitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.link"
+    }
+  }
+}

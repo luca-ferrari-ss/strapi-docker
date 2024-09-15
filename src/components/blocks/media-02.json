@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_blocks_media_02s",
+  "info": {
+    "displayName": "Media 02",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.multimedia"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_blocks_media_04s",
+  "info": {
+    "displayName": "Media 04",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "internalTitle": {
+      "type": "string"
+    },
+    "blockId": {
+      "type": "string"
+    },
+    "hide": {
+      "type": "boolean",
+      "default": false
+    },
+    "reverseColumnsOrder": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundColor": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Light green",
+        "Yellow",
+        "Black",
+        "Orange"
+      ],
+      "default": "Yellow"
+    },
+    "multimedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.multimedia",
+      "min": 2,
+      "max": 2
+    }
+  }
+}
