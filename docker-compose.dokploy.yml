@@ -12,8 +12,8 @@ services:
     networks:
       - palm-beach-cannes-network
       - dokploy-network
-    ports:
-      - "1337"
+    expose:
+      - 1337
     depends_on:
       - palm-beach-cannes-db
     labels:
