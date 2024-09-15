@@ -11,7 +11,7 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
     networks:
       - palm-beach-cannes-network
-    expose:
+    ports:
       - 1337
     depends_on:
       - palm-beach-cannes-db
