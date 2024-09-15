@@ -11,7 +11,6 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
     networks:
       - palm-beach-cannes-network
-      - proxy-net
     expose:
       - 1337
     depends_on:
@@ -29,7 +28,6 @@ services:
       - palm-beach-cannes-data:/var/lib/postgresql/data/ #using a volume
     networks:
       - palm-beach-cannes-network
-      - db-admin-net
     expose:
       - 5432
 
@@ -40,9 +38,3 @@ volumes:
 networks:
   palm-beach-cannes-network:
     name: palm-beach-cannes-network
-  proxy-net:
-    external: true
-    name: proxy-net
-  db-admin-net:
-    external: true
-    name: db-admin-net
