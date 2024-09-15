@@ -17,10 +17,11 @@ services:
     depends_on:
       - palm-beach-cannes-db
     labels:
-      - traefik.enable=true
-      - traefik.http.routers.frontend-app.rule=Host(`strapi-docker-sombrerohosting.com`)
-      - traefik.http.routers.frontend-app.entrypoints=web
-      - traefik.http.services.frontend-app.loadbalancer.server.port=1337
+      - "traefik.enable=true"
+      - "traefik.http.routers.strapi-docker.rule=Host(`strapi-docker.sombrerohosting.com`)"
+      - "traefik.http.routers.strapi-docker.entrypoints=websecure"
+      - "traefik.http.routers.strapi-docker.tls.certResolver=letsencrypt"
+      - "traefik.http.services.strapi-docker.loadbalancer.server.port=1337"
 
   palm-beach-cannes-db:
     image: postgres:14.0-alpine
