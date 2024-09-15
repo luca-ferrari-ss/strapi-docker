@@ -11,8 +11,6 @@ services:
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
     networks:
       - palm-beach-cannes-network
-    ports:
-      - 1337
     depends_on:
       - palm-beach-cannes-db
 
@@ -28,8 +26,6 @@ services:
       - palm-beach-cannes-data:/var/lib/postgresql/data/ #using a volume
     networks:
       - palm-beach-cannes-network
-    expose:
-      - 5432
 
 volumes:
   palm-beach-cannes-data:
