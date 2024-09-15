@@ -1,7 +1,7 @@
 services:
   palm-beach-cannes-strapi:
     container_name: palm-beach-cannes-strapi
-    build: .
+    image: ghcr.io/sombrero-studio/palm-beach-backend:${IMAGE_TAG}
     restart: unless-stopped
     env_file: .env
     environment:
